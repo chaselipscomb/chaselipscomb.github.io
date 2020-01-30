@@ -1,0 +1,83 @@
+.portfoliocontainer {
+    width: 700px;
+    margin: 5vh auto;
+    display: none;
+}
+h1 {
+    color: rgb(211, 217, 223);
+    font-size: 40px;
+}
+h6 {
+    color: rgb(157, 178, 197);
+    font-size: 15px;
+}
+.imagecontainer {
+    margin-top: 5vh;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    width: 700px;
+}
+img {
+    height: 250px;
+    width: 340px;
+    position: relative;
+  display: inline-block;
+}
+img:hover {
+    transform: scale(1.5);
+    transition-duration: 1s;
+}
+.imagecontainer a {
+    max-height: 250px;
+    max-width: 340px;
+    box-shadow: 2px 2px 5px white;
+    overflow: hidden;
+    margin-bottom: 3vh;
+}
+.footer {
+    margin-top: 2vh;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+.footer p {
+    color:grey;
+    font-size: 15px;
+    margin: 1vh 0;
+}
+#email {
+    color: rgb(185, 184, 184);
+}
+@media only screen and (max-width:800px) {
+    .portfoliocontainer {
+        width: 100vw;
+        text-align: center;
+    }
+    .imagecontainer {
+        width: 100vw;
+        flex-flow: wrap column;
+        align-items: center;
+    } 
+    .portfoliocontainer h6 {
+width: 60vw;
+margin: 0 auto;    }
+}
+@media only screen and (max-width: 426px) {
+    .Navigation {
+        justify-content: space-around;
+        width: 100vw;
+    }
+    img {
+        height: 200px;
+        width: 280px;
+    }
+    .imagecontainer a {
+        max-height: 200px;
+        max-width: 280px;
+    }
+    .portfoliocontainer h6 {
+        width: 80vw;
+    }
+        
+}
