@@ -1,0 +1,88 @@
+#aboutbody {
+    display:none;
+    background: inherit;
+    text-align: center;
+}
+.aboutcontainer {
+    display:flex;
+    background: inherit;
+    width: 500px;
+    height: 100vh;
+    margin: 1vh auto;
+    justify-content: center;
+}
+.aboutcontainer div {
+    text-align: center;
+    padding: 2vw;
+}
+#aboutme {
+    font-size: 20px;
+    color: rgb(221, 221, 221);
+    text-align: center;
+    margin-bottom: 2vh;
+}
+#centercontent {
+    text-align: center;
+}
+#picture {
+    margin-top: 0vh;
+    margin-bottom: 2vh;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.skills {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+.skills:hover {
+    background-color: white;
+    color:black;
+    transition-duration: 1s;
+}
+#learnmore {
+    display: inline-block;
+    margin-top: 2vh;
+    color: rgb(113, 206, 118);
+    margin-bottom: 0vh;
+    border: 2px solid rgb(113, 206, 118);
+    border-radius: 25px;
+    padding: 10px;
+}
+#learnmore:hover {
+transition-duration: 1s;    
+color: rgb(238, 238, 238);
+border: 2px solid rgb(238, 238, 238);
+
+
+}
+@media only screen and (max-width:500px) {
+    .aboutcontainer div {
+        width: 90vw;
+    }
+    .aboutcontainer {
+        width: 100vw;
+    }
+    .Navigation {
+        width: 100vw;
+        justify-content: space-around;
+    }   
+    #aboutme {
+        font-size: 15px;
+    }
+    #picture {
+        height: 150px;
+        width: 150px;
+        margin: 2vh 0;
+    }
+    .skills {
+        font-size: 10px;
+    }
+    .aboutcontainer div {
+        margin-top: 0vh;
+    }
+}
