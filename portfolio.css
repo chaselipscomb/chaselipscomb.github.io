@@ -24,15 +24,17 @@ img {
     width: 340px;
     position: relative;
   display: inline-block;
+  transition: all 1s ease;
+
 }
 img:hover {
     transform: scale(1.5);
-    transition-duration: 1s;
+    /* transition-duration: .5s all;     */
 }
 .imagecontainer a {
     max-height: 250px;
     max-width: 340px;
-    box-shadow: 2px 2px 5px white;
+    /* box-shadow: 0px 5px 5px  rgb(255, 255, 255); */
     overflow: hidden;
     margin-bottom: 3vh;
 }
@@ -49,6 +51,41 @@ img:hover {
 #email {
     color: rgb(185, 184, 184);
 }
+
+.container {
+    position: relative;
+    max-height: 250px;
+    max-width: 340px;
+    /* box-shadow: 0px 5px 5px rgb(255, 255, 255); */
+    border: 2px solid slategray;
+    margin-bottom: 3vh;
+  }
+  
+  .overlay {
+    position: absolute; 
+    bottom: -25px; 
+    left: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 300px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    
+  }
+.hovercontained {
+    max-width: 340px;
+    max-height: 250px;
+    overflow: hidden;
+}
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
 @media only screen and (max-width:800px) {
     .portfoliocontainer {
         width: 100vw;
@@ -60,9 +97,10 @@ img:hover {
         align-items: center;
     } 
     .portfoliocontainer h6 {
-width: 60vw;
-margin: 0 auto;    }
-}
+        width: 60vw;
+        margin: 0 auto;
+    }
+   
 @media only screen and (max-width: 426px) {
     .Navigation {
         justify-content: space-around;
@@ -72,6 +110,10 @@ margin: 0 auto;    }
         height: 200px;
         width: 280px;
     }
+    .overlay {
+        width: 240px;
+        font-size: 12px;
+}
     .imagecontainer a {
         max-height: 200px;
         max-width: 280px;
