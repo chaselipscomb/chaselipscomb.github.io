@@ -5,6 +5,7 @@ $( document ).ready(function() {
 
     function Fades() {
         $(".navelements").fadeIn(3000);
+        $(".resume").fadeIn(3000);
         $(".socials a").fadeIn(3000);
 
         $("#aboutbody").fadeIn(2000);
