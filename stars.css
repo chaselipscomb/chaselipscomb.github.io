@@ -119,11 +119,21 @@ header a, a:visited {
     font-size: 20px;
     display: none;
 }
+.resume {
+    padding: 5px;
+    color: rgb(113, 206, 118);
+    font-size: 20px;
+    display: none;
+}
+.resume:hover {
+    color: white;
+    font-size: 22px;
+    transition-duration: 2s;
+}
 .navelements:hover {
     color: white;
     font-size: 25px;
     transition-duration: 2s;
-
 }
 .socials {
     z-index: 10;
