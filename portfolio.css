@@ -109,6 +109,7 @@ img:hover {
     img {
         height: 200px;
         width: 280px;
+        margin-bottom: -4px;
     }
     .overlay {
         width: 240px;
