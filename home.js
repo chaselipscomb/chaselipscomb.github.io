@@ -11,6 +11,9 @@ $( document ).ready(function() {
         $("#aboutbody").fadeIn(2000);
         $(".portfoliocontainer").fadeIn(3000);
 
+        $("#resumeheadercontainer").fadeIn(3000);
+        $(".resumecontainer").fadeIn(3000);
+
         setTimeout(function(){ $("#intro").fadeIn(3000);
         ; }, 0);
         setTimeout(function(){ $("#learnmore").fadeIn(2000);

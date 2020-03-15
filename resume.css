@@ -1,0 +1,42 @@
+.resumecontainer {
+    background-color: none;
+    width: 600px;
+    margin: 5vh auto;
+}
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#resumebutton {
+    background:grey;
+    margin-left: 10px;
+}
+
+#resumeheadercontainer {
+    background: none;
+    text-align: center;
+    margin-top: 5vh;
+}
+#resumeheader {
+ background: none;
+ background-color: none;   
+ font-size: 40px;
+ }
+header {
+    background-color: none;
+    background: none;
+}
+
+
+
+@media only screen and (max-width: 650px) {
+    .resumecontainer {
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .resumecontainer {
+        /* margin: 10vh auto; */
+    }
+}
