@@ -1,43 +1,56 @@
 .resumecontainer {
-    background-color: none;
-    width: 600px;
-    margin: 5vh auto;
+  background-color: none;
+  width: 600px;
+  margin: 5vh auto;
 }
 img {
-    width: 100%;
-    border-radius: 5px;
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.25s ease;
 }
 
 #resumebutton {
-    background:grey;
-    margin-left: 10px;
+  background: grey;
+  margin-left: 10px;
 }
 
 #resumeheadercontainer {
-    display: none;
-    background: none;
-    text-align: center;
-    margin-top: 5vh;
+  display: none;
+  background: none;
+  text-align: center;
+  margin-top: 5vh;
 }
 #resumeheader {
- background: none;
- background-color: none;   
- font-size: 40px;
- }
+  background: none;
+  background-color: none;
+  font-size: 40px;
+}
 header {
-    background-color: none;
-    background: none;
+  background-color: none;
+  background: none;
 }
 
-
+input[type="checkbox"] {
+  display: none;
+}
+@media only screen and (min-width: 1008px) {
+  input[type="checkbox"]:checked ~ label > img {
+    transform: scale(2);
+    margin-top: 100px;
+    cursor: zoom-out;
+  }
+  img {
+    cursor: zoom-in;
+  }
+}
 
 @media only screen and (max-width: 650px) {
-    .resumecontainer {
-        width: 95%;
-    }
+  .resumecontainer {
+    width: 95%;
+  }
 }
 @media only screen and (max-width: 375px) {
-    .resumecontainer {
-        /* margin: 10vh auto; */
-    }
+  .resumecontainer {
+    /* margin: 10vh auto; */
+  }
 }
