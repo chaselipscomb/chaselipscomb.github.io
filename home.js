@@ -37,23 +37,4 @@ $( document ).ready(function() {
         // $("#IntroTwo").fadeIn(20000);
       }
     Fades();
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
