@@ -168,14 +168,16 @@ a:visited {
   display: none;
 }
 .resume:hover {
-  color: white;
-  font-size: 22px;
-  transition-duration: 2s;
+  /* color: white;
+  font-size: 25px;
+  transition-duration: 2s; */
+  text-decoration: underline;
 }
 .navelements:hover {
-  color: white;
+  /* color: white;
   font-size: 25px;
-  transition-duration: 2s;
+  transition-duration: 2s; */
+  text-decoration: underline;
 }
 .socials {
   z-index: 10;
